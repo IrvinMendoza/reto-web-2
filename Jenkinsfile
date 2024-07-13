@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tool {
+    tools {
           gradle 'gradle'
           jdk 'JDK11'
     }
@@ -18,7 +18,7 @@ pipeline {
                  }
               }
         }
-    }
+}
     stage('Execute Tests') {
          steps{
               script{
